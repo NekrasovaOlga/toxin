@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url("../fonts/Quicksand-Bold.eot");
+  src: local("Quicksand Bold"), local("Quicksand-Bold"), url("../fonts/Quicksand-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Quicksand-Bold.woff") format("woff"), url("../fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.title, .title-h2, .subtitle {
+  font-family: 'Quicksand';
+  color: #1F2041;
+}
+
+.title-h2 {
+  font-size: 1.37em;
+  line-height: 24px;
+}
+
+.title {
+  font-size: 1.75em;
+  line-height: 30px;
+}
+
+.subtitle {
+  font-size: 0.86em;
+  line-height: 15px;
+}
+/*# sourceMappingURL=style.css.map */
