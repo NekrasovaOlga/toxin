@@ -1,0 +1,41 @@
+.dropdown
+    &__box
+        +Montserrat
+        border: 1px solid $darkshade25
+        padding: 7px 7px 0 15px
+        margin-top: -2px
+        height: 0
+        opacity: 0
+        position: relative
+        &-item
+            display: flex
+            justify-content: space-between
+            height: 30px
+            margin-bottom: 7px    
+            align-items: center
+            &__text
+                text-transform: uppercase
+                font-weight: bold
+                color: $darkshade100
+    &__calc
+        display: flex
+        align-items: center
+        width: 92px
+        justify-content: space-between
+        color: $darkshade100
+        font-weight: bold
+        &-btn
+            width: 30px
+            height: 30px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: $darkshade25
+            border: 1px solid $darkshade25
+            border-radius: 22px
+            background: none
+
+input[type='checkbox']:checked ~ .dropdown__box
+    height: auto
+    opacity: 1
+    border-top: none

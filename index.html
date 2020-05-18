@@ -4,12 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <title>Toxin</title>
 </head>
 <body>
-    <p class="title">asdasdsads</p>
-    <p class="title-h2">asdasdsads</p>
-    <p class="subtitle">asdasdsads</p>
-    <p>sdjhskjdahsjk</p>
+    <section class="input">
+        <span class="span-otsyp">dropdown</span>
+        <label for="email" class="input-box">
+            <span class="subtitle">Text Field</span>
+            <input type="email" name="" id="email" class="input-box__input" placeholder="Email">
+        </label>
+    </section>
+
+    <!-- .dropdown -->
+    <div class="dropdown input" >
+        <span class="span-otsyp">dropdown</span>
+        <label for="check" class="input-box dropdown__input">
+            <input type="text" class="input-box__input ">
+            <span class="dropdown__arrow"></span>
+        </label>
+        <input type="checkbox" id="check" class="input-box__checkbox">
+        <div class="dropdown__box">
+            <div class="dropdown__box-item">
+                <span class="dropdown__box-item__text">спальни</span>
+                <div class="dropdown__calc">
+                    <button class="dropdown__calc-btn">-</button>
+                    <span class="dropdown__calc-sum">0</span>
+                    <button class="dropdown__calc-btn">+</button>
+                </div>
+            </div>
+            <div class="dropdown__box-item">
+                <span class="dropdown__box-item__text">кровати</span>
+                <div class="dropdown__calc">
+                    <button class="dropdown__calc-btn">-</button>
+                    <span class="dropdown__calc-sum">0</span>
+                    <button class="dropdown__calc-btn">+</button>
+                </div>
+            </div>
+            <div class="dropdown__box-item">
+                <span class="dropdown__box-item__text">ванные комнаты</span>
+                <div class="dropdown__calc">
+                    <button class="dropdown__calc-btn">-</button>
+                    <span class="dropdown__calc-sum">0</span>
+                    <button class="dropdown__calc-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.dropdown -->
+
+    <div class="drop-list input">
+        <input type="checkbox" name="drop-list" id="id" checked>
+        <label for="id">
+            <span class="drop-list__arrow">expandable checkbox list</span>
+        </label>
+        <div class="drop-list__box">
+            <div class="drop-list__box-item">
+                <label for="1">
+                    <input type="checkbox" name="box-check" id="1">
+                    <span class="drop-list__box-item__checkbox">Стол</span>
+                </label>
+            </div>
+            <div class="drop-list__box-item">
+                <label for="2">
+                    <input type="checkbox" name="box-check" id="2">
+                    <span class="drop-list__box-item__checkbox">Письменный стол</span>
+                </label>
+            <div class="drop-list__box-item">
+                <label for="3">
+                    <input type="checkbox" name="box-check" id="3">
+                    <span class="drop-list__box-item__checkbox">Стул для кормления</span>
+                </label>
+            </div>
+            <div class="drop-list__box-item">
+                <label for="4">
+                    <input type="checkbox" name="box-check" id="4">
+                    <span class="drop-list__box-item__checkbox">Кроватка</span>
+                </label>
+            </div>
+            <div class="drop-list__box-item">
+                <label for="5">
+                    <input type="checkbox" name="box-check" id="5">
+                    <span class="drop-list__box-item__checkbox">Телевизор</span>
+                </label>
+            </div>
+            <div class="drop-list__box-item">
+                <label for="6">
+                    <input type="checkbox" name="box-check" id="6">
+                    <span class="drop-list__box-item__checkbox">Шампунь</span>
+                </label>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

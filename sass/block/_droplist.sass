@@ -1,0 +1,63 @@
+.drop-list
+    position: relative
+    +Montserrat
+    &__arrow
+        position: relative
+        display: flex
+        align-items: center
+        height: 44px
+        text-transform: uppercase
+        font-weight: bold
+        &::after
+            position: absolute
+            content: ''
+            width: 44px
+            height: 44px
+            background: url('../img/expand_more.svg')            
+            background-repeat: no-repeat
+            background-position: center
+            top: 0
+            right: 0
+            transition: 0.5s
+    &__box
+        opacity: 0
+        &-item
+            &__checkbox
+                position: relative
+                padding-left: 29px
+                display: flex
+                align-items: center
+                color: $darkshade50
+                margin-bottom: 10px
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 20px
+                    height: 20px
+                    border: 1px solid $darkshade25
+                    border-radius: 4px
+                    left: 0
+                &::after
+                    position: absolute
+                    content: ''
+                    background: url('../img/vector.svg')            
+                    background-repeat: no-repeat
+                    background-position: center
+                    width: 20px
+                    height: 20px
+                    left: 1px
+                    top: -1px
+                    opacity: 0
+                    transition: 0.2s
+                    
+input[type='checkbox']:checked + .drop-list__box-item__checkbox
+    &::after
+        opacity: 1
+
+input[type='checkbox']:checked 
+    ~ .drop-list__box
+        opacity: 1
+    ~ label > .drop-list__arrow
+        &::after
+            transform: rotate(180deg)
+    
