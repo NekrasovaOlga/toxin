@@ -1,26 +1,76 @@
-.radio-btn
-    &__gender
-        position: relative
-        padding-left: 30px
-        &::before
-            position: absolute
-            content: ''
-            width: 20px
+.radio
+    &-btn
+        &__gender
+            position: relative
+            padding-left: 30px
+            &::before
+                position: absolute
+                content: ''
+                width: 20px
+                height: 20px
+                border-radius: 10px
+                border: 1px solid $darkshade50
+                left: 0
+                top: 0
+            &::after
+                position: absolute
+                content: ''
+                background: $purple
+                width: 12px
+                height: 12px
+                border-radius: 10px
+                left: 5px
+                top: 5px
+                opacity: 0
+    &-toggle
+        +Montserrat
+        &__btn
+            position: relative
+            padding-left: 50px
+            display: flex
+            align-items: center
             height: 20px
-            border-radius: 10px
-            border: 1px solid $darkshade50
-            left: 0
-            top: 0
+            &::before
+                position: absolute
+                content: ''
+                width: 40px
+                height: 20px
+                border-radius: 10px
+                border: 1px solid $darkshade25
+                left: 0
+                top: 0
+            &::after
+                position: absolute
+                content: ''
+                background: $darkshade25
+                width: 12px
+                height: 12px
+                border-radius: 10px
+                left: 4px
+                top: 5px
+                transition: .3s
+.like-btn
+    &__true
+        position: relative
+        width: 40px
+        font-size: 10px
+        display: flex
+        align-items: center
+        height: 20px
+        border: 1px solid $darkshade25
+        border-radius: 10px
+        justify-content: flex-end
+        padding-right: 10px
         &::after
             position: absolute
             content: ''
-            background: $purple
-            width: 12px
-            height: 12px
-            border-radius: 10px
-            left: 5px
-            top: 5px
-            opacity: 0
+            background: url(../img/favorite_border.svg)
+            background-repeat: no-repeat
+            background-position: center
+            width: 20px
+            height: 20px
+            left: 0
+            transition: .3s
 
 input[type='radio']:checked + .radio-btn__gender
     &::before
@@ -28,3 +78,18 @@ input[type='radio']:checked + .radio-btn__gender
     &::after
         opacity: 1
             
+input[type='checkbox']:checked + .radio-toggle__btn
+    &::before
+        border-color: $purple
+    &::after
+        left: 25px
+        background: $purple
+
+input[type='checkbox']:checked + .like-btn__true
+    border-color: $purple
+    color: $purple
+    &::after
+        background: url(../img/favorite.svg)
+        background-repeat: no-repeat
+        background-position: center
+        

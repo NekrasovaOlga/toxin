@@ -1,6 +1,10 @@
 .drop-list
     position: relative
     +Montserrat
+    &__title
+        font-weight: bold
+        color: $darkshade100
+        margin-bottom: 5px
     &__arrow
         position: relative
         display: flex
@@ -23,13 +27,17 @@
         height: 0
         overflow: hidden
         &-item
+            max-width: 266px
+            width: 100%
             &__checkbox
                 position: relative
                 padding-left: 29px
                 display: flex
                 align-items: flex-start
+                flex-direction: column
                 color: $darkshade50
                 margin-bottom: 10px
+                font-size: 14px
                 &::before
                     position: absolute
                     content: ''
